@@ -47,18 +47,7 @@ export default function RootLayout({
             <main className="container mx-auto max-w-7xl  px-6 flex-grow">
               {children}
             </main>
-            <footer className="w-full flex items-center justify-center py-3">
-              <Link
-                isExternal
-                className="flex items-center gap-1 text-current"
-                href="https://heroui.com?utm_source=next-app-template"
-                title="heroui.com homepage"
-              >
-                <span className="text-default-600">CopyRight</span>
-                {/* eslint-disable-next-line */}
-                <p className="text-primary">Certiweld Pro</p>
-              </Link>
-            </footer>
+            <footer className="w-full flex items-center justify-center py-3"></footer>
           </div>
         </Providers>
       </body>

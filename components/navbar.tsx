@@ -1,3 +1,5 @@
+"use client";
+import React from "react";
 import {
   Navbar as HeroUINavbar,
   NavbarContent,
@@ -26,8 +28,14 @@ import {
 } from "@/components/icons";
 
 export const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+
   return (
-    <HeroUINavbar maxWidth="xl" position="sticky">
+    <HeroUINavbar
+      maxWidth="xl"
+      position="sticky"
+      onMenuOpenChange={setIsMenuOpen}
+    >
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand as="li" className="gap-3 max-w-fit">
           <NextLink className="flex justify-start items-center gap-1" href="/">
@@ -76,8 +84,32 @@ export const Navbar = () => {
           <GithubIcon className="text-default-500" />
         </Link>
         <ThemeSwitch />
-        <NavbarMenuToggle />
+        <NavbarMenuToggle
+          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+          className="sm:hidden"
+        />
       </NavbarContent>
+
+      <NavbarMenu>
+        {siteConfig.navItems.map((item, index) => (
+          <NavbarMenuItem key={`${item.href}-${index}`}>
+            <NextLink
+              className={clsx(
+                "w-full",
+                index === 0 ? "text-primary" : "text-foreground"
+              )}
+              href={item.href}
+            >
+              {item.label}
+            </NextLink>
+          </NavbarMenuItem>
+        ))}
+        <NavbarMenuItem>
+          <Link className="w-full text-danger" href="/logout">
+            Log Out
+          </Link>
+        </NavbarMenuItem>
+      </NavbarMenu>
     </HeroUINavbar>
   );
 };

@@ -42,15 +42,15 @@ export default function Home() {
         </ImagesSlider>
 
         {/* Company Profile Section */}
-        <div className="py-24 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 grid-rows-auto gap-4 md:gap-6 lg:gap-8 max-w-screen text-center">
+        <div className="py-24 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 grid-rows-auto gap-8 sm:gap-4 md:gap-6 lg:gap-8 max-w-screen text-center">
           <div className="col-span-1 sm:col-span-2 lg:col-span-2 row-span-1 flex items-center justify-center">
             <h1 className={title({ class: "mb-4" })}>
               <Image
-                src="/logo.jpg"
+                src="/hero/1.jpg"
                 alt="CertiWeld Indonesia Logo"
                 width={320}
                 height={320}
-                className="h-32 w-auto sm:h-40 md:h-60 lg:h-80 rounded-full border-2 border-primary shadow-lg"
+                className="h-32 w-auto sm:h-40 md:h-60 lg:h-80 rounded-xl shadow-lg"
               />
             </h1>
           </div>
@@ -81,21 +81,21 @@ export default function Home() {
           </div>
           <div className="col-span-1 sm:col-span-2 lg:col-span-2 row-span-1 flex items-center justify-center">
             <Image
-              src="/logo.jpg"
+              src="/hero/2.jpg"
               alt="CertiWeld Indonesia Logo"
               width={320}
               height={320}
-              className="h-32 w-auto sm:h-40 md:h-60 lg:h-80 rounded-full border-2 border-primary shadow-lg"
+              className="h-32 w-auto sm:h-40 md:h-60 lg:h-80 rounded-xl shadow-lg"
             />
           </div>
 
           <div className="col-span-1 sm:col-span-1 lg:col-span-2 row-span-1 flex items-center justify-center">
             <Image
-              src="/logo.jpg"
+              src="/hero/3.jpg"
               alt="CertiWeld Indonesia Logo"
               width={320}
               height={320}
-              className="h-32 w-auto sm:h-40 md:h-60 lg:h-80 rounded-full border-2 border-primary shadow-lg"
+              className="h-32 w-auto sm:h-40 md:h-60 lg:h-80 rounded-xl shadow-lg"
             />
           </div>
           <div className="col-span-1 sm:col-span-2 lg:col-span-3 row-span-1 flex items-center justify-center">
