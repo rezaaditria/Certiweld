@@ -58,6 +58,7 @@ export const Navbar = () => {
       <NavbarContent
         className="hidden sm:flex basis-1/5 sm:basis-full"
         justify="end"
+        style={{ zIndex: 101 }} // Added zIndex here
       >
         <NavbarItem className="hidden sm:flex gap-2">
           <Link isExternal aria-label="Twitter" href={siteConfig.links.twitter}>
@@ -73,7 +74,11 @@ export const Navbar = () => {
         </NavbarItem>
       </NavbarContent>
 
-      <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
+      <NavbarContent
+        className="sm:hidden basis-1 pl-4"
+        justify="end"
+        style={{ zIndex: 101 }} // Added zIndex here
+      >
         <Link isExternal aria-label="Github" href={siteConfig.links.github}>
           <GithubIcon className="text-default-500" />
         </Link>
@@ -84,7 +89,9 @@ export const Navbar = () => {
         />
       </NavbarContent>
 
-      <NavbarMenu>
+      <NavbarMenu
+        style={{ zIndex: 101 }} // Added zIndex here
+      >
         {siteConfig.navItems.map((item, index) => (
           <NavbarMenuItem key={`${item.href}-${index}`}>
             <NextLink
