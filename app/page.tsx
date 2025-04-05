@@ -6,6 +6,9 @@ import React from "react";
 import Image from "next/image";
 import { ImagesSlider } from "@/components/ui/images-slider";
 import { BentoGridDemo } from "@/components/bento";
+import CountUp from "@/components/total";
+import { AnimatedTestimonials } from "@/components/ui/animated-testimonials";
+import { AnimatedTestimonialsDemo } from "@/components/testi";
 
 const images = ["/hero/1.jpg", "/hero/2.jpg", "/hero/3.jpg"];
 
@@ -42,20 +45,20 @@ export default function Home() {
         </ImagesSlider>
 
         {/* Company Profile Section */}
-        <div className="py-24 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 grid-rows-auto gap-8 sm:gap-4 md:gap-6 lg:gap-8 max-w-screen text-center">
-          <div className="col-span-1 sm:col-span-2 lg:col-span-2 row-span-1 flex items-center justify-center">
+        <div className="py-24 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 grid-rows-auto gap-y-12 gap-x-8 sm:gap-y-8 sm:gap-x-4 md:gap-y-10 md:gap-x-6 lg:gap-y-32 lg:gap-x-8 max-w-screen text-center">
+          <div className="col-span-1 sm:col-span-2 lg:col-span-2 row-span-1 flex items-center justify-center ">
             <h1 className={title({ class: "mb-4" })}>
               <Image
-                src="/hero/1.jpg"
+                src="/logo.jpg"
                 alt="CertiWeld Indonesia Logo"
                 width={320}
                 height={320}
-                className="h-32 w-auto sm:h-40 md:h-60 lg:h-80 rounded-xl shadow-lg"
+                className="h-64 w-auto sm:h-48 md:h-60 lg:h-80 rounded-full "
               />
             </h1>
           </div>
           <div className="col-span-1 sm:col-span-2 lg:col-span-3 row-span-1 flex items-center justify-center">
-            <p className={subtitle({ class: "mb-4 text-left" })}>
+            <p className={subtitle({ class: "mb-4 text-justify" })}>
               <em>CertiWeld Indonesia</em> adalah perusahaan terkemuka yang
               menyediakan layanan lengkap dalam bidang{" "}
               <strong>
@@ -70,7 +73,7 @@ export default function Home() {
           </div>
 
           <div className="col-span-1 sm:col-span-2 lg:col-span-3 row-span-1 flex items-center justify-center">
-            <p className={subtitle({ class: "mb-4 text-right" })}>
+            <p className={subtitle({ class: "mb-4 text-justify" })}>
               Kami percaya bahwa pengelasan yang presisi dan berkualitas adalah
               fondasi bagi proyek yang kuat dan tahan lama. Oleh karena itu,{" "}
               <em>CertiWeld Indonesia</em> berfokus pada peningkatan keahlian
@@ -85,7 +88,7 @@ export default function Home() {
               alt="CertiWeld Indonesia Logo"
               width={320}
               height={320}
-              className="h-32 w-auto sm:h-40 md:h-60 lg:h-80 rounded-xl shadow-lg"
+              className="h-64 w-auto sm:h-48 md:h-60 lg:h-80 rounded-xl shadow-lg"
             />
           </div>
 
@@ -95,11 +98,11 @@ export default function Home() {
               alt="CertiWeld Indonesia Logo"
               width={320}
               height={320}
-              className="h-32 w-auto sm:h-40 md:h-60 lg:h-80 rounded-xl shadow-lg"
+              className="h-64 w-auto sm:h-48 md:h-60 lg:h-80 rounded-xl shadow-lg"
             />
           </div>
           <div className="col-span-1 sm:col-span-2 lg:col-span-3 row-span-1 flex items-center justify-center">
-            <p className={subtitle({ class: "mb-4 text-left" })}>
+            <p className={subtitle({ class: "mb-4 text-justify" })}>
               Dengan <em>CertiWeld Indonesia</em>, Anda mendapatkan mitra yang
               tidak hanya memastikan sertifikasi, tetapi juga{" "}
               <strong>
@@ -108,6 +111,30 @@ export default function Home() {
               dalam setiap proyek pengelasan yang Anda jalankan.
             </p>
           </div>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-3 pb-24 gap-y-4 sm:gap-x-2">
+          <div className="text-5xl sm:text-6xl font-semibold col-span-1 sm:col-span-2 flex items-center justify-center">
+            Lebih dari
+          </div>
+          <div className="col-span-1 sm:col-start-3 flex items-center justify-center">
+            <CountUp
+              from={0}
+              to={50}
+              separator=","
+              direction="up"
+              duration={1}
+              className="count-up-text font-bold text-5xl sm:text-6xl bg-gradient-to-r from-blue-700 to-red-500 bg-clip-text text-transparent"
+              startWhen={true}
+            />
+          </div>
+          <div className="text-5xl sm:text-6xl font-semibold col-span-1 sm:col-start-4 flex items-center justify-center">
+            clients
+          </div>
+        </div>
+
+        <div>
+          <AnimatedTestimonialsDemo />
         </div>
 
         <div>

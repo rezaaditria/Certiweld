@@ -47,7 +47,11 @@ export default function RootLayout({
             <main className="container mx-auto max-w-7xl  px-6 flex-grow">
               {children}
             </main>
-            <footer className="w-full flex items-center justify-center py-3"></footer>
+            <footer className="w-full flex items-center justify-center pt-16 pb-24 md:pt-24 md:pb-24 relative">
+              <div className="text-xl md:text-2xl font-semibold text-center px-4 relative z-10">
+                Forge Excellence, Weld the Future.
+              </div>
+            </footer>
           </div>
         </Providers>
       </body>
