@@ -28,6 +28,7 @@ export const Navbar = () => {
       maxWidth="xl"
       position="sticky"
       onMenuOpenChange={setIsMenuOpen}
+      style={{ zIndex: 101 }} // Added zIndex here
     >
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand as="li" className="gap-3 max-w-fit">
