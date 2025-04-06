@@ -119,7 +119,7 @@ export const ImagesSlider = ({
   return (
     <div
       className={cn(
-        "overflow-hidden h-full w-screen relative flex items-center justify-center",
+        "overflow-hidden overflow-x-hidden h-full w-screen relative flex items-center justify-center",
         className
       )}
       style={{
@@ -133,7 +133,7 @@ export const ImagesSlider = ({
       {areImagesLoaded && overlay && (
         <div
           className={cn(
-            "absolute inset-0 bg-black/60 z-40 max-w-screen",
+            "absolute inset-0 bg-black/60 z-40 max-w-screen overflow-x-hidden",
             overlayClassName
           )}
         />

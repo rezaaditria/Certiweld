@@ -10,7 +10,7 @@ export const BentoGrid = ({
   return (
     <div
       className={cn(
-        "mx-auto grid max-w-7xl grid-cols-1 gap-4 md:auto-rows-[18rem] md:grid-cols-3",
+        "mx-auto grid max-w-7xl grid-cols-1 gap-8 md:auto-rows-[18rem] md:grid-cols-3",
         className
       )}
     >
@@ -33,18 +33,23 @@ export const BentoGridItem = ({
   icon?: React.ReactNode;
 }) => {
   return (
-    <div
+    <article
       className={cn(
-        "group/bento shadow-input row-span-1 flex flex-col justify-between space-y-4 rounded-xl border   p-4 transition duration-200 hover:shadow-xl ",
+        "shadow-input flex flex-col justify-between rounded-xl border p-4 transition duration-200 hover:shadow-xl overflow-hidden",
+        "w-full h-full",
         className
       )}
     >
-      {header}
-      <div className="transition duration-200 group-hover/bento:translate-x-2">
-        {icon}
-        <div className="mt-2 mb-2 font-sans font-bold ">{title}</div>
-        <div className="font-sans text-xs font-normal ">{description}</div>
+      <div className="relative w-full h-2/3 overflow-hidden rounded-lg">
+        {header}
+        <div className="absolute top-1 right-1">{icon}</div>
       </div>
-    </div>
+      <div className="flex flex-col  h-1/3 mt-4">
+        <h2 className="font-sans font-bold text-lg">{title}</h2>
+        <div className="font-sans text-sm font-light overflow-auto scrollbar-hide">
+          {description}
+        </div>
+      </div>
+    </article>
   );
 };

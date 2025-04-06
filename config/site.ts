@@ -1,69 +1,49 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "CERTIWELDPRO",
-  description: "Forge Excellence, Weld the Future.",
+  name: "Certiweld Pro Indonesia",
+  description: "Certified Skills. Trusted Results.",
+  keywords: [
+    "welding certification",
+    "professional welding",
+    "Certiweld Pro Indonesia",
+    "welding",
+    "las",
+    "sertifikasi pengelasan",
+  ],
   navItems: [
     {
       label: "Home",
       href: "/",
     },
     {
-      label: "Docs",
-      href: "/docs",
-    },
-    {
-      label: "Pricing",
-      href: "/pricing",
-    },
-    {
-      label: "Blog",
-      href: "/blog",
-    },
-    {
       label: "About",
-      href: "/about",
+      href: "/#about",
+    },
+    {
+      label: "Works",
+      href: "/works",
+    },
+    {
+      label: "Contact",
+      href: "/contact",
     },
   ],
   navMenuItems: [
     {
-      label: "Profile",
-      href: "/profile",
+      label: "Home",
+      href: "/",
     },
     {
-      label: "Dashboard",
-      href: "/dashboard",
+      label: "About",
+      href: "#about",
     },
     {
-      label: "Projects",
-      href: "/projects",
-    },
-    {
-      label: "Team",
-      href: "/team",
-    },
-    {
-      label: "Calendar",
-      href: "/calendar",
-    },
-    {
-      label: "Settings",
-      href: "/settings",
-    },
-    {
-      label: "Help & Feedback",
-      href: "/help-feedback",
-    },
-    {
-      label: "Logout",
-      href: "/logout",
+      label: "Contact",
+      href: "/contact",
     },
   ],
   links: {
-    github: "",
-    twitter: "",
-    docs: "",
-    discord: "",
-    sponsor: "",
+    insta: "https://www.instagram.com/certiweld/",
   },
 };

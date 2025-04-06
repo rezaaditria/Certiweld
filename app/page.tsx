@@ -1,16 +1,19 @@
 "use client";
-
 import { title, subtitle } from "@/components/primitives";
 import { motion } from "framer-motion";
 import React from "react";
 import Image from "next/image";
 import { ImagesSlider } from "@/components/ui/images-slider";
-import { BentoGridDemo } from "@/components/bento";
 import CountUp from "@/components/total";
-import { AnimatedTestimonials } from "@/components/ui/animated-testimonials";
 import { AnimatedTestimonialsDemo } from "@/components/testi";
 
-const images = ["/hero/1.jpg", "/hero/2.jpg", "/hero/3.jpg"];
+const images = [
+  "/hero/1.jpg",
+  "/hero/2.jpg",
+  "/hero/3.jpg",
+  "/hero/4.jpg",
+  "/hero/5.jpg",
+];
 
 export default function Home() {
   return (
@@ -30,7 +33,7 @@ export default function Home() {
             transition={{
               duration: 0.6,
             }}
-            className="z-50 flex flex-col justify-center items-center"
+            className="z-50 flex flex-col justify-center items-center "
           >
             <div className="flex justify-center">
               <Image
@@ -45,12 +48,15 @@ export default function Home() {
         </ImagesSlider>
 
         {/* Company Profile Section */}
-        <div className="py-24 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 grid-rows-auto gap-y-12 gap-x-8 sm:gap-y-8 sm:gap-x-4 md:gap-y-10 md:gap-x-6 lg:gap-y-32 lg:gap-x-8 max-w-screen text-center">
+        <div
+          id="about"
+          className="py-24 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 grid-rows-auto gap-y-12 gap-x-8 sm:gap-y-8 sm:gap-x-4 md:gap-y-10 md:gap-x-6 lg:gap-y-32 lg:gap-x-8 max-w-screen text-center"
+        >
           <div className="col-span-1 sm:col-span-2 lg:col-span-2 row-span-1 flex items-center justify-center ">
             <h1 className={title({ class: "mb-4" })}>
               <Image
                 src="/logo.jpg"
-                alt="CertiWeld Indonesia Logo"
+                alt="CertiWeld Pro Indonesia Logo"
                 width={320}
                 height={320}
                 className="h-64 w-auto sm:h-48 md:h-60 lg:h-80 rounded-full "
@@ -59,7 +65,7 @@ export default function Home() {
           </div>
           <div className="col-span-1 sm:col-span-2 lg:col-span-3 row-span-1 flex items-center justify-center">
             <p className={subtitle({ class: "mb-4 text-justify" })}>
-              <em>CertiWeld Indonesia</em> adalah perusahaan terkemuka yang
+              <em>Certiweld Pro Indonesia</em> adalah perusahaan terkemuka yang
               menyediakan layanan lengkap dalam bidang{" "}
               <strong>
                 pelatihan, sertifikasi, inspeksi, dan konsultasi pengelasan
@@ -76,10 +82,10 @@ export default function Home() {
             <p className={subtitle({ class: "mb-4 text-justify" })}>
               Kami percaya bahwa pengelasan yang presisi dan berkualitas adalah
               fondasi bagi proyek yang kuat dan tahan lama. Oleh karena itu,{" "}
-              <em>CertiWeld Indonesia</em> berfokus pada peningkatan keahlian
-              tenaga pengelas melalui pelatihan dan sertifikasi yang diakui
-              secara global, memastikan setiap profesional yang kami sertifikasi
-              siap menghadapi tantangan industri modern.
+              <em>CertiWeld Pro Indonesia</em> berfokus pada peningkatan
+              keahlian tenaga pengelas melalui pelatihan dan sertifikasi yang
+              diakui secara global, memastikan setiap profesional yang kami
+              sertifikasi siap menghadapi tantangan industri modern.
             </p>
           </div>
           <div className="col-span-1 sm:col-span-2 lg:col-span-2 row-span-1 flex items-center justify-center">
@@ -135,10 +141,6 @@ export default function Home() {
 
         <div>
           <AnimatedTestimonialsDemo />
-        </div>
-
-        <div>
-          <BentoGridDemo />
         </div>
 
         {/* Call-to-Action Section */}
