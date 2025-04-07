@@ -82,7 +82,7 @@ const Pipetraining = () => (
 );
 const PipeFitter = () => (
   <video
-    src="/work/Pipe fitter test.mp4"
+    src="/work/Pipe_fitter_test.mp4"
     className="object-cover object-center rounded-xl w-full h-full min-h-[6rem]"
     autoPlay
     muted
