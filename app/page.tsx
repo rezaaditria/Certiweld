@@ -90,7 +90,7 @@ export default function Home() {
             <p className={subtitle({ class: "mb-4 text-justify" })}>
               Kami percaya bahwa pengelasan yang presisi dan berkualitas adalah
               fondasi bagi proyek yang kuat dan tahan lama. Oleh karena itu,{" "}
-              <strong>CertiWeld Pro Indonesia</strong> berfokus pada peningkatan
+              <strong>Certiweld Pro Indonesia</strong> berfokus pada peningkatan
               keahlian tenaga pengelas melalui pelatihan dan sertifikasi yang
               diakui secara global, memastikan setiap profesional yang kami
               sertifikasi siap menghadapi tantangan industri modern.
@@ -117,7 +117,7 @@ export default function Home() {
           </div>
           <div className="col-span-1 sm:col-span-2 lg:col-span-3 row-span-1 flex items-center justify-center">
             <p className={subtitle({ class: "mb-4 text-justify" })}>
-              Dengan <strong>CertiWeld Pro Indonesia</strong>, Anda mendapatkan
+              Dengan <strong>Certiweld Pro Indonesia</strong>, Anda mendapatkan
               mitra yang tidak hanya memastikan sertifikasi, tetapi juga{" "}
               <strong>
                 komitmen terhadap kualitas, keamanan, dan keberlanjutan
