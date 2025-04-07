@@ -14,33 +14,37 @@ export const siteConfig = {
   navItems: [
     {
       label: "Home",
-      href: "/",
-    },
-    {
-      label: "About",
-      href: "/#about",
-    },
-    {
-      label: "Works",
-      href: "/works",
-    },
-    {
-      label: "Contact",
-      href: "/contact",
-    },
-  ],
-  navMenuItems: [
-    {
-      label: "Home",
-      href: "/",
+      href: "#home",
     },
     {
       label: "About",
       href: "#about",
     },
     {
+      label: "Works",
+      href: "#works",
+    },
+    {
       label: "Contact",
-      href: "/contact",
+      href: "#contact",
+    },
+  ],
+  navMenuItems: [
+    {
+      label: "Home",
+      href: "#home",
+    },
+    {
+      label: "About",
+      href: "#about",
+    },
+    {
+      label: "Works",
+      href: "#works",
+    },
+    {
+      label: "Contact",
+      href: "#contact",
     },
   ],
   links: {

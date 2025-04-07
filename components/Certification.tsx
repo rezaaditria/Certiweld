@@ -38,6 +38,7 @@ const Mitsubishi = () => (
     autoPlay
     muted
     loop
+    playsInline
   ></video>
 );
 
@@ -48,6 +49,7 @@ const IntanCahaya = () => (
     autoPlay
     muted
     loop
+    playsInline
   ></video>
 );
 
@@ -58,6 +60,7 @@ const Krama = () => (
     autoPlay
     muted
     loop
+    playsInline
   ></video>
 );
 const Hino = () => (
@@ -67,6 +70,7 @@ const Hino = () => (
     autoPlay
     muted
     loop
+    playsInline
   ></video>
 );
 

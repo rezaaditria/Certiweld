@@ -1,6 +1,6 @@
+"use client";
 import React from "react";
 import { BentoGrid, BentoGridItem } from "./ui/bento-grid";
-import Image from "next/image";
 
 export function WeldingServices() {
   return (
@@ -37,7 +37,8 @@ const WPS = () => (
     autoPlay
     muted
     loop
-  ></video>
+    playsInline
+  />
 );
 const Consultant = () => (
   <video
@@ -46,6 +47,7 @@ const Consultant = () => (
     autoPlay
     muted
     loop
+    playsInline
   ></video>
 );
 const Inspection = () => (
@@ -55,6 +57,7 @@ const Inspection = () => (
     autoPlay
     muted
     loop
+    playsInline
   ></video>
 );
 const Weldertest = () => (
@@ -64,6 +67,7 @@ const Weldertest = () => (
     autoPlay
     muted
     loop
+    playsInline
   ></video>
 );
 const Pipetraining = () => (
@@ -73,6 +77,7 @@ const Pipetraining = () => (
     autoPlay
     muted
     loop
+    playsInline
   ></video>
 );
 const PipeFitter = () => (
@@ -82,6 +87,7 @@ const PipeFitter = () => (
     autoPlay
     muted
     loop
+    playsInline
   ></video>
 );
 const PipeFitter1 = () => (
@@ -91,6 +97,7 @@ const PipeFitter1 = () => (
     autoPlay
     muted
     loop
+    playsInline
   ></video>
 );
 const PipeFitter2 = () => (
@@ -100,18 +107,10 @@ const PipeFitter2 = () => (
     autoPlay
     muted
     loop
+    playsInline
   ></video>
 );
 
-const PemdaBekasi = () => (
-  <Image
-    src="/work/pemdaBekasi.png"
-    alt="Pemda Bekasi"
-    width={1600}
-    height={900}
-    className="object-cover object-top rounded-xl w-full h-full"
-  />
-);
 const items = [
   {
     title: "Welding Procedure (WPS/PQR)",

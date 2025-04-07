@@ -10,7 +10,6 @@ export default function WorksPage() {
         <h1 className={title()}>Welding Services</h1>
       </div>
       <WeldingServices />
-
       <div className="py-8">
         <h1 className={title()}>Welding Training & Certification</h1>
       </div>

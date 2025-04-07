@@ -51,6 +51,14 @@ export const Navbar = () => {
                 )}
                 color="foreground"
                 href={item.href}
+                scroll={false} // Prevents default instant jump
+                onClick={(e) => {
+                  e.preventDefault();
+                  const target = document.querySelector(item.href);
+                  if (target) {
+                    target.scrollIntoView({ behavior: "smooth" });
+                  }
+                }}
               >
                 {item.label}
               </NextLink>
