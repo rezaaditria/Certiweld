@@ -4,24 +4,10 @@ export function AnimatedTestimonialsDemo() {
   const testimonials = [
     {
       quote:
-        "The attention to detail and innovative features have completely transformed our workflow. This is exactly what we've been looking for.",
-      name: "Sarah Chen",
-      designation: "Product Manager at TechFlow",
-      src: "/hero/1.jpg",
-    },
-    {
-      quote:
-        "Implementation was seamless and the results exceeded our expectations. The platform's flexibility is remarkable.",
-      name: "Michael Rodriguez",
-      designation: "CTO at InnovateSphere",
-      src: "/hero/2.jpg",
-    },
-    {
-      quote:
-        "This solution has significantly improved our team's productivity. The intuitive interface makes complex tasks simple.",
-      name: "Emily Watson",
-      designation: "Operations Director at CloudScale",
-      src: "/hero/3.jpg",
+        "Sebagai CEO Certiweld Pro Indonesia, saya percaya bahwa kualitas sumber daya manusia adalah fondasi utama dalam membangun industri yang tangguh dan berdaya saing. Di tengah dinamika global dan tuntutan sertifikasi kompetensi yang semakin tinggi, kehadiran layanan pelatihan dan sertitikasi yang kredibel menjadi kebutuhan strategis.",
+      name: "DIWAN ALI, S.T , IWIP",
+      designation: " CEO Certiweld Pro Indonesia",
+      src: "/hero/CEO.png",
     },
   ];
   return <AnimatedTestimonials testimonials={testimonials} />;

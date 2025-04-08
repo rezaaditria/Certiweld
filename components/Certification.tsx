@@ -140,6 +140,12 @@ const items = [
     icon: <Year2024 />,
   },
   {
+    title: "PT. HINO MOTOR MANUFACTURING INDONESIA",
+    description: "Welding Training and Certification",
+    header: <Hino />,
+    icon: <Year2024 />,
+  },
+  {
     title: "PEMDA KOTA BEKASI",
     description: "Welding Training and Certification",
     header: <PemdaBekasi />,
@@ -156,12 +162,6 @@ const items = [
     description: "Welding Training and Certification",
     header: <BLKNon />,
     icon: <Year2024 />,
-  },
-  {
-    title: "PT. HINO MOTOR MANUFACTURING INDONESIA",
-    description: "Welding Training and Certification",
-    header: <Hino />,
-    icon: <Year2023 />,
   },
   {
     title: "BLK MANDIRI DISNAKERTRANS PEMPROV JAWA BARAT",

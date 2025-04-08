@@ -23,12 +23,12 @@ export const Navbar = () => {
   return (
     <HeroUINavbar
       isBordered
-      shouldHideOnScroll
+      // shouldHideOnScroll
       maxWidth="xl"
       position="sticky"
       isMenuOpen={isMenuOpen}
       onMenuOpenChange={setIsMenuOpen}
-      style={{ zIndex: 200 }} // Added zIndex here
+      style={{ zIndex: 102 }} // Added zIndex here
     >
       <NavbarContent className="basis-1/5 sm:basis-full" justify="center">
         <NavbarBrand as="li" className="gap-3 max-w-fit">
