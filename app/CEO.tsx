@@ -14,7 +14,7 @@ export const Ceo = () => {
       >
         <div className="col-span-1 sm:col-span-1 lg:col-span-2 row-span-1 flex flex-col items-center justify-center">
           <Image
-            src="/hero/CEO.png"
+            src="/hero/ceo.png"
             alt="CertiWeld Indonesia Logo"
             width={320}
             height={320}
