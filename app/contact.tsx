@@ -45,7 +45,7 @@ export const Contact = () => {
             </p>
             <p aria-label="call" className="px-4 py-2 flex items-center gap-2">
               <CallIcon className="text-default-500" />
-              <span className="font-medium">+62-8132-4861-055</span>
+              <span className="font-medium"> +62-8132-4022-522</span>
             </p>
           </div>
         </div>
