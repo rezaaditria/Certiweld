@@ -34,17 +34,17 @@ export const Contact = () => {
               href={siteConfig.links.insta}
               className="px-4 py-2 flex items-center gap-2"
             >
-              <InstagramIcon className="text-white" />
+              <InstagramIcon className="text-default-500" />
               <span className="font-medium">@certiweld</span>
             </Link>
           </div>
           <div className=" flex flex-col md:flex-col-2 items-center md:items-start gap-2">
             <p aria-label="call" className="px-4 py-2  flex items-center gap-2">
-              <CallIcon className="text-white" />
+              <CallIcon className="text-default-500" />
               <span className="font-medium">+62-8132-4861-055</span>
             </p>
             <p aria-label="call" className="px-4 py-2 flex items-center gap-2">
-              <CallIcon className="text-white" />
+              <CallIcon className="text-default-500" />
               <span className="font-medium">+62-8132-4861-055</span>
             </p>
           </div>
